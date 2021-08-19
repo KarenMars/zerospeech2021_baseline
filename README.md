@@ -47,7 +47,7 @@ Example command:
 
     python ./scripts/quantize_audio.py \
         checkpoints/CPC-big-kmeans50/clustering_kmeans50/clustering_CPC_big_kmeans50.pt \
-        ../data/LibriSpeech/dev-clean/ \
+        /tudelft.net/staff-bulk/ewi/insy/SpeechLab/corpora/english/LibriSpeech/dev-clean/ \
         ../quantized/LibriSpeech/dev-clean/ \
         --file_extension wav
 
@@ -63,8 +63,8 @@ set of audio files.
 Example command:
 
     python scripts/build_CPC_features.py \
-        checkpoints/CPC-big-kmeans50/CPC_big_6kh/checkpoint_32.pt \
-        ../data/LibriSpeech/dev-clean/ \
+        checkpoints/CPC-big-kmeans50/cpc_ll6k/checkpoint_32.pt \
+        /tudelft.net/staff-bulk/ewi/insy/SpeechLab/corpora/english/LibriSpeech/dev-clean/ \
         ../features/CPC/layer2/LibriSpeech/dev-clean/ \
         --file_extension flac --gru_level 2
 
